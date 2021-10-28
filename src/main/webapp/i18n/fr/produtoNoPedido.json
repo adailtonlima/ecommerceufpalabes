@@ -1,0 +1,28 @@
+{
+  "ecommerceufpalabesApp": {
+    "produtoNoPedido": {
+      "home": {
+        "title": "ProdutoNoPedidos",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Produto No Pedido",
+        "createOrEditLabel": "Créer ou éditer un Produto No Pedido",
+        "notFound": "Aucun Produto No Pedido trouvé"
+      },
+      "created": "Un nouveau Produto No Pedido a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Produto No Pedido avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Produto No Pedido avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Produto No Pedido {{ id }} ?"
+      },
+      "detail": {
+        "title": "Produto No Pedido"
+      },
+      "id": "ID",
+      "quantidade": "Quantidade",
+      "preco": "Preco",
+      "criado": "Criado",
+      "produto": "Produto",
+      "pedido": "Pedido"
+    }
+  }
+}
