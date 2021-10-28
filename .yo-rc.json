@@ -44,7 +44,9 @@
     "clientTheme": "none",
     "clientThemeVariant": "",
     "reactive": false,
-    "enableGradleEnterprise": false
+    "enableGradleEnterprise": false,
+    "entities": ["Usuario", "Endereco", "Produto", "Pedido", "ProdutoNoPedido"],
+    "lastLiquibaseTimestamp": 1635447212000
   },
   "git-provider": "GitHub",
   "git-company": "adailtonlima",

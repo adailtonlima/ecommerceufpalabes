@@ -1,0 +1,31 @@
+{
+  "ecommerceufpalabesApp": {
+    "pedido": {
+      "home": {
+        "title": "Pedidos",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Pedido",
+        "createOrEditLabel": "Créer ou éditer un Pedido",
+        "notFound": "Aucun Pedido trouvé"
+      },
+      "created": "Un nouveau Pedido a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Pedido avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Pedido avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Pedido {{ id }} ?"
+      },
+      "detail": {
+        "title": "Pedido"
+      },
+      "id": "ID",
+      "criado": "Criado",
+      "status": "Status",
+      "precoTotal": "Preco Total",
+      "comentarios": "Comentarios",
+      "codigoPagamento": "Codigo Pagamento",
+      "produtos": "Produtos",
+      "usuario": "Usuario",
+      "endereco": "Endereco"
+    }
+  }
+}
