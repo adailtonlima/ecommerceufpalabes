@@ -1,0 +1,73 @@
+
+entity Usuario {
+	nome String required unique 
+    cpf String
+    dataNascimento LocalDate    
+    criado ZonedDateTime    
+}
+
+entity Endereco {
+	nome String
+    cep String required
+    logradouro String
+    bairro String
+    numero String
+    cidade String
+    complemento String
+}
+
+entity Produto{	
+    nome String required
+    descricao TextBlob
+    fotoUrl String
+    sku String
+	ean String
+    criado ZonedDateTime
+    preco Double
+    precoPromocional Double
+    totalEstoque Integer    
+}
+
+enum StatusPedido {
+	PEDIDO, AGUARDANDO_PAGAMENTO, PAGO, ENTREGUE, CANCELADO, ESTORNADO
+}
+
+entity Pedido {
+	criado ZonedDateTime
+    status StatusPedido
+    precoTotal Double
+    comentarios TextBlob
+    codigoPagamento String
+}
+
+entity ProdutoNoPedido {
+	quantidade Integer
+	preco Double
+    criado ZonedDateTime
+}
+
+// OneToOne
+// ManyToMany
+// OneToMany
+// ManyToOne
+
+relationship OneToMany{
+	Usuario{meusEnderecos} to Endereco{usuario(nome)}
+    Pedido{produtos} to ProdutoNoPedido{pedido}
+}
+
+relationship ManyToOne {
+    Pedido{usuario(nome)} to Usuario
+    Pedido{endereco(nome)} to Endereco      
+    ProdutoNoPedido{produto(nome)} to Produto
+          
+}
+
+// Set pagination options
+paginate * with pagination
+dto * with mapstruct
+service all with serviceImpl
+filter *
+
+
+
